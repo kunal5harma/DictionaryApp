@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(240, 149, 149);
+}
+
+.head {
+    font-family: 'Clicker Script', cursive;
+    font-size: 50px;
+    color: #ffffff;
+    background-color: rgb(44, 42, 42);
+    font-weight: bold;
+    /* text-align: center; */
+    padding-left: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 80px;
+    border-radius: 10px;
+    box-shadow: 0 0px 40px rgba(38, 33, 61, 0.2);
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input {
+    text-align: center;
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(240, 149, 149);
+    font-size: 16px;
+
+}
+
+.search-box button {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 15px 0;
+    font-weight: bold;
+    background-color: rgb(240, 149, 149);
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: rgb(255, 210, 210);
+}
+
+.result {
+    position: relative;
+}
+
+.result h3 {
+    font-size: 30px;
+    color: #1f194c;
+}
+
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.result button {
+    background-color: transparent;
+    color: rgb(240, 149, 149);
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+
+.word-meaning {
+    color: #575a7b;
+}
+
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid rgb(240, 149, 149);
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.icon {
+    display: none;
+}
+
+
+@media (max-width:660px) {
+    .head {
+        font-size: 40px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .search-box button {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 30%;
+        margin: auto;
+    }
+
+    .result {
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    .head {
+        font-size: 25px;
+    }
+
+    .container {
+        padding: 10%;
+    }
+}
